@@ -1,0 +1,24 @@
+ #include<iostream>
+using namespace std;
+int main()
+{
+    int w_h,h_r;
+
+    cout<<"Enter number of hours you worked in this week : ";
+    cin>>w_h;
+    cout<<"\nEnter hour rate : ";
+    cin>>h_r;
+
+    int b_pay = w_h*h_r;
+
+    cout<<"\nBasic pay : "<<b_pay;
+
+    if(w_h>40)
+     {
+        int o_pay = ((b_pay-(40*h_r))*(.5));
+        cout<<"\nOvertime pay : "<<o_pay;
+        cout<<"\nTotal pay : "<<b_pay+o_pay;
+     }
+  
+  return 0;
+}
