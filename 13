@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int rph,wh;
+
+
+    cout<<"Enter rate per hour : ";
+    cin>>rph;
+    cout<<"\nEnter numner of hour worked : ";
+    cin>>wh;
+
+    int pay = wh*rph;
+
+    cout<<"\nTatal pay : "<<pay;
+
+    return 0;
+}
